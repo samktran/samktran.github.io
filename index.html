@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav-inner">
+      <a class="brand" href="#"><span class="brand-dot"></span>Sam Tran</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="theme-icon">&#9728;</span></button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-blobs" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-label reveal">&#10022; Available for freelance</div>
+      <h1 class="hero-title reveal">
+        <span class="hero-greeting">Hello, I'm Sam &mdash;</span><br>
+        <span class="hero-typed-wrapper">
+          <span id="heroTyped"></span><span class="typed-cursor">|</span>
+        </span>
+      </h1>
+      <p class="hero-sub reveal">Full-stack developer crafting beautiful, interactive experiences with clean code and purposeful design.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary mag-btn" href="#projects">See my work</a>
+        <a class="btn btn-ghost mag-btn" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-scroll-hint reveal" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Who I am</span>
+          <h2 class="section-title">Passionate about<br>digital craft</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a full-stack developer with a designer's eye. With over 4 years of industry experience, I turn ideas into polished, responsive interfaces that feel intuitive and look stunning. Whether it's a landing page or a complex web app, I bring the same care to every pixel.</p>
+            <p>Outside of code, I enjoy travelling, watch collecting, and having a wholesome bowl of ramen.</p>
+            <a class="btn btn-ghost mag-btn" href="#contact" style="margin-top:1.5rem;display:inline-block">Let's work together &#8594;</a>
+          </div>
+          <div class="about-cards reveal">
+            <div class="about-card">
+              <div class="about-card-icon">&#10022;</div>
+              <h3>Design</h3>
+              <p>Pixel-perfect UIs with a focus on hierarchy, whitespace, and delight.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">&#9651;</div>
+              <h3>Development</h3>
+              <p>Modern HTML, CSS &amp; JS &mdash; performance-first, accessible by default.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">&#9776;</div>
+              <h3>Interaction</h3>
+              <p>Subtle motion and micro-interactions that elevate user experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Selected work</span>
+          <h2 class="section-title">Things I've built</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card tilt-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-num">01</div>
+            <h3>Rosé Hair Studio Website</h3>
+            <p>Responsive full-featured website for a hair studio, showcasing services, team, and booking options.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://samktran.github.io/rosehairstudio.github.io/" class="project-link">Live &#8599;</a>
+              <a href="https://github.com/samktran/rosehairstudio.github.io" class="project-link">Code &#8599;</a>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-num">02</div>
+            <h3>Project Two</h3>
+            <p>Data-driven dashboard with interactive charts, filters, and accessible keyboard navigation.</p>
+            <div class="project-tags"><span>React</span><span>D3.js</span><span>CSS</span></div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live &#8599;</a>
+              <a href="#" class="project-link">Code &#8599;</a>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-num">03</div>
+            <h3>Council Information Disclosure Log</h3>
+            <p>A comprehensive log of all information disclosed by the council, built with a focus on accessibility and user experience.</p>
+            <div class="project-tags"><span>C#</span><span>.NET</span></div>
+            <div class="project-links">
+              <a href="https://web.north-herts.gov.uk/foidl" class="project-link">Live &#8599;</a>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-num">04</div>
+            <h3>Project Four</h3>
+            <p>E-commerce storefront with real-time cart, smooth transitions, and optimised core web vitals.</p>
+            <div class="project-tags"><span>Next.js</span><span>Stripe</span><span>Tailwind</span></div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live &#8599;</a>
+              <a href="#" class="project-link">Code &#8599;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Expertise</span>
+          <h2 class="section-title">Tools &amp; Technologies</h2>
+        </div>
+        <div class="tech-grid">
+
+          <div class="tech-card reveal" style="--tech-color:#239120">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="tech-img" />
+            </div>
+            <span>C#</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#512BD4">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt="ASP.NET" class="tech-img" />
+            </div>
+            <span>ASP.NET</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#007396">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="tech-img" />
+            </div>
+            <span>Java</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#512BD4">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg" alt="Blazor" class="tech-img" />
+            </div>
+            <span>Blazor</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#512BD4">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET MAUI" class="tech-img" />
+            </div>
+            <span>MAUI</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#E34F26">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="tech-img" />
+            </div>
+            <span>HTML</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#1572B6">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" class="tech-img" />
+            </div>
+            <span>CSS</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#F7DF1E">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-img" />
+            </div>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#336791">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" class="tech-img" />
+            </div>
+            <span>SQL</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#0078D7">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg" alt="Azure DevOps" class="tech-img" />
+            </div>
+            <span>DevOps</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#F2C811">
+            <div class="tech-logo-wrap">
+              <!-- Power BI — official Microsoft icon as inline SVG -->
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="tech-img" style="width:48px;height:48px;">
+                <rect x="2" y="6" width="5" height="20" rx="1.5" fill="#F2C811"/>
+                <rect x="9" y="10" width="5" height="16" rx="1.5" fill="#F2C811" opacity="0.85"/>
+                <rect x="16" y="4" width="5" height="22" rx="1.5" fill="#F2C811" opacity="0.7"/>
+                <rect x="23" y="14" width="5" height="12" rx="1.5" fill="#F2C811" opacity="0.55"/>
+              </svg>
+            </div>
+            <span>Power BI</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#3776AB">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="tech-img" />
+            </div>
+            <span>Python</span>
+          </div>
+
+          <div class="tech-card reveal" style="--tech-color:#61DAFB">
+            <div class="tech-logo-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="tech-img" />
+            </div>
+            <span>React</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Say hello</span>
+          <h2 class="section-title">Let's work together</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>I'm available for freelance and full-time opportunities. If you have a project in mind or just want to chat, send a message below.</p>
+            <div class="contact-socials">
+              <a href="https://github.com/samktran" class="social-link mag-btn">GitHub &#8599;</a>
+              <a href="https://www.linkedin.com/in/samktran/" class="social-link mag-btn">LinkedIn &#8599;</a>
+              <a href="https://www.instagram.com/samktran/" class="social-link mag-btn">Instagram &#8599;</a>
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form reveal" novalidate>
+            <div class="form-group">
+              <input type="text" name="name" id="fieldName" placeholder=" " required autocomplete="name" />
+              <label for="fieldName">Your name</label>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="fieldEmail" placeholder=" " required autocomplete="email" />
+              <label for="fieldEmail">Your email</label>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="fieldMessage" rows="5" placeholder=" " required></textarea>
+              <label for="fieldMessage">Message</label>
+              <span class="field-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary send-btn mag-btn">
+              <span class="send-label">Send message</span>
+              <span class="send-icon">&#8594;</span>
+            </button>
+            <p class="form-note" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Sam Tran &mdash; Designed &amp; built with care</p>
+      <a href="#hero" class="footer-top">Back to top &#8593;</a>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK — sends form emails without a backend -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
