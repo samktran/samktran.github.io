@@ -112,7 +112,7 @@ body.cursor-hover .cursor-dot  { transform: translate(-50%,-50%) scale(1.6); }
 
 /* Brand logo image */
 .brand-logo {
-  width: 38px; height: 38px;
+  width: 52px; height: 52px;
   display: block;
   object-fit: contain;
   transition: transform 0.18s ease;
