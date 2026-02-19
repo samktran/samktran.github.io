@@ -110,25 +110,14 @@ body.cursor-hover .cursor-dot  { transform: translate(-50%,-50%) scale(1.6); }
   box-shadow: 0 0 8px var(--accent);
 }
 
-/* Code icon used in the header brand */
-.brand-icon {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px;
-  color: var(--accent);
-  background: transparent;
-  border-radius: 0;
-  transition: transform 0.18s ease, color 0.18s ease;
+/* Brand logo image */
+.brand-logo {
+  width: 38px; height: 38px;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.18s ease;
 }
-.brand-icon svg { display: block; width: 26px; height: 26px; }
-.brand-icon svg text {
-  fill: var(--accent);
-  filter: drop-shadow(0 6px 18px var(--glow));
-  transition: filter 0.18s ease, transform 0.18s ease;
-}
-.brand-icon:hover svg text {
-  filter: drop-shadow(0 10px 28px var(--glow));
-  transform: translateY(-2px) scale(1.03);
-}
+.brand:hover .brand-logo { transform: translateY(-2px) scale(1.05); }
 .nav-links {
   list-style: none; display: flex; gap: 32px;
 }
@@ -289,8 +278,10 @@ body.cursor-hover .cursor-dot  { transform: translate(-50%,-50%) scale(1.6); }
 ============================================= */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 12px 24px; border-radius: 10px;
-  font-size: 0.9rem; font-weight: 600;
+  padding: 11px 22px; border-radius: 10px;
+  font-size: 0.85rem; font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   border: none; cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s, opacity 0.2s;
   position: relative; overflow: hidden;
@@ -785,6 +776,14 @@ body.cursor-hover .cursor-dot  { transform: translate(-50%,-50%) scale(1.6); }
 .footer-inner {
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 12px;
+}
+.footer-brand {
+  display: flex; align-items: center; gap: 10px;
+}
+.footer-brand-logo {
+  width: 28px; height: 28px;
+  object-fit: contain;
+  display: block;
 }
 .footer-inner p, .footer-top {
   font-size: 0.85rem; color: var(--muted);
